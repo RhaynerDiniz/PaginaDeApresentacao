@@ -93,11 +93,11 @@ padding: 0 24px;
     z-index: 1;
     transform: translateY(-50%);
 
-    animation: slide-black 0.2s;
+    animation: slide-out 0.2s;
 }
 
 .light #switch button {
-  animation: slide-in 0.2s forwards;
+  animation: slide-in 0.4s forwards;    
 }
 
 #switch button:hover {
@@ -182,7 +182,7 @@ footer {
     font-size: 14px;
 }
 
-// Media Queries
+/*Media Queries*/
 @media(min-width: 700px){
     :root {
         --bg-url: url(./assets/bg-desktop.jpg);
@@ -192,5 +192,25 @@ footer {
         --bg-url: url(./assets/bg-desktop-ligth.jpg);
     }
 }
+
+/*Animaçoes*/
+@keyframes slide-in{
+from {
+    left: 0;
+}
+to {
+    left: 50%;
+}
+}
+
+@keyframes slide-out {
+from{
+    left: 50%;
+}
+to {
+    left: 0;
+}
+}
+
 
 
